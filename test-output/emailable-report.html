@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Free CRM App Test Cases</td><td class="numi">2</td><td class="numi">2</td><td class="numi_attn">9</td><td class="numi_attn">1</td><td class="numi">152.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Free CRM App Test Cases &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.crm.qa.testcases.HomePageTest</td><td><a href="#m1"><b>setUp</b>  </a></td><td class="numi">1</td><td>1537466530835</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m2"><b>setUp</b>  </a></td><td class="numi">1</td><td>1537466574759</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Free CRM App Test Cases &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.crm.qa.testcases.LoginPageTest</td><td><a href="#m3"><b>loginPageTitleTest</b>  </a></td><td class="numi">1</td><td>1537466477659</td><td class="numi">62</td></tr>
+<tr><th colspan="4">Free CRM App Test Cases &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.crm.qa.testcases.HomePageTest</td><td><a href="#m4"><b>setUp</b>  </a></td><td class="numi">2</td><td>1537466574747</td><td class="numi">6</td></tr>
+<tr class="skippedeven"><td rowspan="2">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m5"><b>setUp</b>  </a></td><td class="numi">5</td><td>1537466613037</td><td class="numi">958</td></tr><tr class="skippedeven"><td><a href="#m6"><b>tearDown</b>  </a></td><td class="numi">6</td><td>1537466613036</td><td class="numi">965</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.crm.qa.testcases.HomePageTest</td><td><a href="#m7"><b>tearDown</b>  </a></td><td class="numi">3</td><td>1537466574745</td><td class="numi">12</td></tr>
+<tr><th colspan="4">Free CRM App Test Cases &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="5">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m8"><b>selectMultipleContactsTest</b>  </a></td><td class="numi">1</td><td>1537466613041</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m9"><b>selectSingleContactsTest</b>  </a></td><td class="numi">1</td><td>1537466613038</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m10"><b>validateCreateNewContact</b>  </a></td><td class="numi">3</td><td>1537466613984</td><td class="numi">16</td></tr><tr class="skippedodd"><td><a href="#m11"><b>validateCreateNewContact</b>  </a></td><td class="numi">3</td><td>1537466613984</td><td class="numi">16</td></tr><tr class="skippedodd"><td><a href="#m12"><b>validateCreateNewContact</b>  </a></td><td class="numi">3</td><td>1537466613984</td><td class="numi">16</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.crm.qa.testcases.HomePageTest</td><td><a href="#m13"><b>verifyContactsLinkTest</b>  </a></td><td class="numi">1</td><td>1537466574755</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m14"><b>verifyContactsPageLabel</b>  </a></td><td class="numi">1</td><td>1537466613020</td><td class="numi">6</td></tr>
+<tr class="skippedeven"><td rowspan="2">com.crm.qa.testcases.HomePageTest</td><td><a href="#m15"><b>verifyHomePageTitleTest</b>  </a></td><td class="numi">1</td><td>1537466574742</td><td class="numi">2</td></tr><tr class="skippedeven"><td><a href="#m16"><b>verifyUserNameTest</b>  </a></td><td class="numi">1</td><td>1537466574748</td><td class="numi">2</td></tr>
+<tr><th colspan="4">Free CRM App Test Cases &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">com.crm.qa.testcases.LoginPageTest</td><td><a href="#m17"><b>crmLogoImageTest</b>  </a></td><td class="numi">1</td><td>1537466494544</td><td class="numi">90</td></tr><tr class="passedodd"><td><a href="#m18"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1537466510622</td><td class="numi">19372</td></tr>
+</table>
+<h1>Free CRM App Test Cases</h1>
+<h2 id="m1">com.crm.qa.testcases.HomePageTest:setUp</h2>
+<div style="padding-left:3em">
+<p>timeout
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:19.891Z&apos;
+System info: host: &apos;PRASHANT-HP&apos;, ip: &apos;169.254.127.166&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\prashant\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: c8bec26684d2eb18066b43a23d7e220c</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:485)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:497)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+<br/>at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+<br/>at com.crm.qa.pages.LoginPage.login(LoginPage.java:49)
+<br/>at com.crm.qa.testcases.HomePageTest.setUp(HomePageTest.java:41)
+<br/>27 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.crm.qa.testcases.ContactsPageTest:setUp</h2>
+<div style="padding-left:3em">
+<p>timeout
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:19.891Z&apos;
+System info: host: &apos;PRASHANT-HP&apos;, ip: &apos;169.254.127.166&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\prashant\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 00e7ccac01ead5c67bb234924f8db26d</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:485)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:497)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+<br/>at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+<br/>at com.crm.qa.pages.LoginPage.login(LoginPage.java:49)
+<br/>at com.crm.qa.testcases.ContactsPageTest.setUp(ContactsPageTest.java:47)
+<br/>27 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.crm.qa.testcases.LoginPageTest:loginPageTitleTest</h2>
+<div style="padding-left:3em">
+<p>expected [#1 Free CRM for Any Business: Online Customer Relationship Software] but found [#1 Free CRM software in the cloud for sales and service]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.crm.qa.testcases.LoginPageTest.loginPageTitleTest(LoginPageTest.java:29)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.crm.qa.testcases.ContactsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.crm.qa.testcases.ContactsPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.crm.qa.testcases.ContactsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.crm.qa.testcases.HomePageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.crm.qa.testcases.ContactsPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.crm.qa.testcases.HomePageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.crm.qa.testcases.ContactsPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.crm.qa.testcases.ContactsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.crm.qa.testcases.HomePageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.crm.qa.testcases.HomePageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.crm.qa.testcases.HomePageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.crm.qa.testcases.ContactsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.crm.qa.testcases.ContactsPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.crm.qa.testcases.ContactsPageTest:setUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.crm.qa.testcases.ContactsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.crm.qa.testcases.ContactsPageTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">com.crm.qa.testcases.HomePageTest:verifyHomePageTitleTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">com.crm.qa.testcases.HomePageTest:verifyContactsLinkTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">com.crm.qa.testcases.ContactsPageTest:selectSingleContactsTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">com.crm.qa.testcases.ContactsPageTest:selectMultipleContactsTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">com.crm.qa.testcases.HomePageTest:verifyUserNameTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">com.crm.qa.testcases.ContactsPageTest:validateCreateNewContact</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>Mrs.</td>
+<td>Mukta</td>
+<td>Sharma</td>
+<td>Ebay</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">com.crm.qa.testcases.ContactsPageTest:validateCreateNewContact</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>Mr.</td>
+<td>Tom</td>
+<td>Peter</td>
+<td>Google</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">com.crm.qa.testcases.ContactsPageTest:verifyContactsPageLabel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">com.crm.qa.testcases.ContactsPageTest:validateCreateNewContact</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>Dr.</td>
+<td>David</td>
+<td>Cris</td>
+<td>Amazon</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">com.crm.qa.testcases.LoginPageTest:loginTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">com.crm.qa.testcases.LoginPageTest:crmLogoImageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
